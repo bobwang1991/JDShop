@@ -1,0 +1,371 @@
+/*tab-Control start 选项卡内容区域开始*/
+/*这是选项卡主体内容-通栏广告区域*/
+.tab-Control{
+    margin-bottom: 20px;
+}
+.tab-Control div.footer-banner {
+    width: 1210px;
+    height: 140px;
+    margin: 0 auto;
+}
+.tab-Control div.footer-banner div.foot-banner{
+    height:110px;
+    margin: 30px 0;
+}
+.tab-Control div.footer-banner div.foot-banner div.banner-main {
+    width: 1200px;
+    height:110px;
+    margin: 0 auto;
+}
+.tab-Control div.footer-banner div.foot-banner div.banner-main a {
+    float: left;
+    width: 400px;
+    height: 125px;
+    display: block;
+}
+/*选项卡主体区域*/
+/*选项卡主体-标题*/
+.tab-control-title {
+    border-bottom: 1px solid red;
+    position: relative;
+    background: #fff;
+}
+.tab-control-title h2{
+    font-weight:400;
+    padding-left:40px;/*左填充 为了给楼层提示背景预留区域*/
+    color:#333;
+    float:left;
+    line-height:30px;
+    font-size:20px;
+    font-family:"微软雅黑";
+    position:relative;
+}
+
+/*楼层提示*/
+.tab-control-title h2 i{
+    width:21px;
+    height:25px;
+    padding-right:10px;
+    position:absolute;
+    top:2px;
+    left:0;
+    background:url("../images/JD-tabControl/floor-sel.png") 0 -36px no-repeat;
+    font-size:12px;
+    color:#fff;
+    text-align:center;
+}
+
+/*楼层提示动画*/
+.tab-control-title h2:hover i{
+    animation:floor 2s;
+    background:url("../images/JD-tabControl/floor-sel.png");
+    background-position:0 0;
+}
+
+@keyframes floor{
+    from{background:url("../images/JD-tabControl/floor-sel.png") 0 -36px no-repeat;}
+    to{background:url("../images/JD-tabControl/floor-sel.png") 0 0 no-repeat;}
+}
+
+/*选项卡按钮*/
+.tab-control-title ul.tab-but{
+    height:34px;
+    line-height:34px;
+    float:right;
+    border:1px solid #ededed;
+    border-bottom:none;
+}
+.tab-control-title ul.tab-but li{
+    float:left;
+    height:34px;
+}
+.tab-control-title ul.tab-but li a{
+    padding:0 16px;
+    height:34px;
+    line-height:34px;
+    display:block;
+    float:left;
+    font-size:12px;
+    background:#fff;
+    border-left:1px solid #fff;
+    border-right:1px solid #fff;
+}
+.tab-control-title ul.tab-but li a.sel{
+    color:#c81623;
+    border-left:1px solid #c81623;
+    border-right:1px solid #c81623;
+    border-top:3px solid  #c81623;
+    height:33px;
+    line-height:30px;
+    margin-top:-1px;
+}
+/*选项卡主体内容 第一类,左右布局 左固定（布局形式 上中下），右切换*/
+/*第一类选项卡左侧固定板块*/
+.tab-control-content div.tab-control-1 div.left-side{
+    width: 330px;
+}
+.tab-control-content div.tab-control-1 div.left-side div.left-side-top {
+    height: 474px;
+    position: relative;
+}
+/*左侧固定板块图片*/
+.tab-control-content div.tab-control-1 div.left-side div.left-side-top div.side-banner a{
+    width: 330px;
+    height:474px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+/*图片白光遮罩层*/
+.tab-control-content div.tab-control-1 div.left-side div.left-side-top div.side-banner a i {
+    width: 80px;
+    height: 350px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -164px;
+    /*linear-gradient——线性渐变 通常颜色渐变会定义三个值-webkit-linear-gradient(方向,角度,颜色)*/
+    background: -webkit-linear-gradient(left, rgba(250, 0, 18, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
+    /*transform:动画 skew-斜度*/
+    transform: skewX(-25deg);
+}
+/*白光遮罩层动画调用,动画关键字创建*/
+.i-skew{-webkit-animation:i-skew 1.1s;/*animation-Css3 动画调用 i-skew 动画规则名字 1.1 时间*/}
+/*keyframes Css3动画关键帧规则*/
+@-webkit-keyframes i-skew{
+    from{left:-164px;}/*开始*/
+    to{left:415px;}/*结束*/
+}
+/*左侧固定板块导航*/
+.tab-control-content div.tab-control-1 div.left-side div.left-side-top ul.side-nav {
+    height: 92px;
+    background: rgba(255, 255, 255, .5);
+    position: relative;
+    margin-top: -221px;
+    padding-left: 25px;
+}
+.tab-control-content div.tab-control-1 div.left-side div.left-side-top ul.side-nav li{
+    float: left;
+    width: 100px;
+    height: 26px;
+    padding: 10px 0;
+}
+.tab-control-content div.tab-control-1 div.left-side div.left-side-top ul.side-nav li a{
+    color: #666;
+    line-height:26px;
+}
+.tab-control-content div.tab-control-1 div.left-side div.left-side-top ul.side-nav li a:hover{
+    color: #c81263;
+}
+.tab-control-content div.tab-control-1 div.left-side div.left-side-top ul.side-nav li a i {
+    width: 26px;
+    height:26px;
+    display: block;
+    background: url("../images/JD-tabControl/side-nav-icon.png") no-repeat;
+    float: left;
+    margin-right:10px;
+}
+/*导航区域小图标单独设定
+    :nth-child();序列号选择器,当前父元素通过指定某个序列号单独找到该子元素
+    比如：:nth-child(n)  n-代表父元素里面子元素序号 好比ul里面中第几个Li
+*/
+.tab-control-content div.tab-control-1 div.left-side div.left-side-top ul.side-nav li:first-child a i {
+    background-position: 0 0;
+}
+.tab-control-content div.tab-control-1 div.left-side div.left-side-top ul.side-nav li:nth-child(2) a i{
+    background-position: 0 -26px;
+}
+.tab-control-content div.tab-control-1 div.left-side div.left-side-top ul.side-nav li:nth-child(3) a i{
+    background-position: 0 -52px;
+}
+.tab-control-content div.tab-control-1 div.left-side div.left-side-top ul.side-nav li:nth-child(4) a i{
+    background-position: 0 -78px;
+}
+.tab-control-content div.tab-control-1 div.left-side div.left-side-top ul.side-nav li:nth-child(5) a i{
+    background-position: 0 -104px;
+}
+.tab-control-content div.tab-control-1 div.left-side div.left-side-top ul.side-nav li:nth-child(6) a i{
+    background-position: 0 -130px;
+}
+/*左侧固定板块列表*/
+.tab-control-content div.tab-control-1 div.left-side div.left-side-top ul.side-list {
+    height: 128px;
+    background: rgba(255, 255, 255, .7);
+    border-bottom: 1px solid #ededed;
+    position: relative;
+}
+.tab-control-content div.tab-control-1 div.left-side div.left-side-top ul.side-list li {
+    width: 135px;
+    height: 96px;
+    padding: 16px 0 0 25px;
+    float: left;
+}
+.tab-control-content div.tab-control-1 div.left-side div.left-side-top ul.side-list li a {
+    float: left;
+    display: block;
+    margin-right: 10px;
+    line-height: 24px;
+    white-space: nowrap; /*保留空白*/
+    font-size: 12px;
+    color: #999999;
+    font-family: '宋体';
+}
+.tab-control-content div.tab-control-1 div.left-side div.left-side-top ul.side-list li a span{
+    color: #c81263;
+}
+/*左侧固定板块底部广告位*/
+.tab-control-content div.tab-control-1 div.left-side div.left-side-bottom {
+    width: 328px;
+    height: 158px;
+    border:1px solid #ededed;
+    border-left:1px solid #f7f5ee;
+    border-top:0;
+}
+/*第一类选项卡右侧切换板块*/
+.tab-control-content div.tab-control-1 div.right-con{
+    width: 880px;
+    height:633px;
+    float: left;
+    overflow: hidden;
+}
+.tab-control-content div.tab-control-1 div.right-con div.right-con-main ul.listcon-product {
+    width: 890px;
+    height: 471px;
+}
+.tab-control-content div.tab-control-1 div.right-con div.right-con-main ul.listcon-product li {
+    width: 185px;
+    height: 230px;
+    border-right: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+    padding: 6px 17px 0;
+    float: left;
+}
+/*产品列表图片区域样式*/
+.tab-control-content div.tab-control-1 div.right-con div.right-con-main ul.listcon-product li div.product-img {
+    height: 140px;
+    margin: 0 0 4px;
+    padding: 15px 0 0;
+    background: white;
+    text-align: center;
+}
+.tab-control-content div.tab-control-1 div.right-con div.right-con-main ul.listcon-product li div.product-img img{
+    display: inline;
+}
+.tab-control-content div.tab-control-1 div.right-con div.right-con-main ul.listcon-product li div.product-info {
+    height: 35px;
+    margin-bottom: 3px;
+    text-align: left;
+    overflow: hidden;
+    background: white;
+}
+.tab-control-content div.tab-control-1 div.right-con div.right-con-main ul.listcon-product li div.product-info a{
+    color: #666;
+    font-size: 12px;
+}
+.tab-control-content div.tab-control-1 div.right-con div.right-con-main ul.listcon-product li div.product-price {
+    color: #e4393c;
+    font-size: 15px;
+    text-align: left;
+}
+/*右侧切换内容底部广告列表区域*/
+.tab-control-content div.tab-control-1 div.right-con div.right-con-main ul.listcon-ad{
+    width: 890px;
+    height: 159px;
+    overflow: hidden;
+}
+.tab-control-content div.tab-control-1 div.right-con div.right-con-main ul.listcon-ad li {
+    width: 219px;
+    height: 159px;
+    float: left;
+    border-right: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+}
+/*第一类选项卡主体区域 板块一内容 start*/
+.tab-control-content div.tab-control-1 div.right-con div.right-con-main div.tab1-con{
+    width: 440px;
+    height:663px;
+    color:white;
+}
+/*板块第一内容 左侧广告*/
+.tab-control-content div.tab-control-1 div.right-con div.right-con-main div.tab1-con div.conLeft-ad {
+    width: 439px;
+}
+.tab-control-content div.tab-control-1 div.right-con div.right-con-main div.tab1-con div.conLeft-ad a {
+    border-right: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+    display: block;
+}
+/*板块第一内容 左侧轮播*/
+.tab-control-content div.tab-control-1 div.right-con div.right-con-main div.tab1-con div.conLeft-banner{
+    width: 439px;
+    height: 314px;
+    border-right: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+    position: relative;
+    color:red;
+    text-align: center;
+}
+/*无缝轮播图片区域*/
+.tab-control-content div.tab-control-1 div.right-con div.right-con-main div.tab1-con div.conLeft-banner div.conLeft-banner-pic {
+    width: 433px;
+    height: 315px;
+    overflow: hidden;
+}
+.tab-control-content div.tab-control-1 div.right-con div.right-con-main div.tab1-con div.conLeft-banner div.conLeft-banner-pic ul{
+    width: 1000%;
+    margin-left: -439px;
+}
+.tab-control-content div.tab-control-1 div.right-con div.right-con-main div.tab1-con div.conLeft-banner div.conLeft-banner-pic ul li{
+    float: left;
+}
+/*无缝轮播按钮区域*/
+.tab-control-content div.tab-control-1 div.right-con div.right-con-main div.tab1-con div.conLeft-banner div.conLeft-banner-btn{
+    display: none;
+}
+.tab-control-content div.tab-control-1 div.right-con div.right-con-main div.tab1-con div.conLeft-banner div.conLeft-banner-btn a {
+    width: 30px;
+    height: 60px;
+    background: rgba(0, 0, 0, .5);
+    display: block;
+    text-align: center;
+    font: 500 14px/60px '黑体';
+    color: white;
+    position: absolute;
+    top:50%;
+    margin-top: -30px;
+}
+.tab-control-content div.tab-control-1 div.right-con div.right-con-main div.tab1-con div.conLeft-banner div.conLeft-banner-btn a.prev{
+    left:6px;
+}
+.tab-control-content div.tab-control-1 div.right-con div.right-con-main div.tab1-con div.conLeft-banner div.conLeft-banner-btn a.next{
+    right:6px;
+}
+/*无缝轮播选项卡区域*/
+.tab-control-content div.tab-control-1 div.right-con div.right-con-main div.tab1-con div.conLeft-banner  div.conLeft-banner-tab {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -26px;
+}
+.tab-control-content div.tab-control-1 div.right-con div.right-con-main div.tab1-con div.conLeft-banner  div.conLeft-banner-tab ul li {
+    width: 9px;
+    height: 9px;
+    background: #3e3e3e;
+    float: left;
+    margin: 0 2px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.tab-control-content div.tab-control-1 div.right-con div.right-con-main div.tab1-con div.conLeft-banner  div.conLeft-banner-tab ul li.on{
+    background: #b61b1f;
+}
+/*板块一内容 右侧广告区域*/
+.tab-control-content div.tab-control-1 div.right-con div.right-con-main div.tab1-con-right ul li{
+    float: left;
+}
+.tab-control-content div.tab-control-1 div.right-con div.right-con-main div.tab1-con-right ul li a {
+    display: block;
+    border-right: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+}
+/*第一类选项卡主体区域 板块一内容 end*/

@@ -1,0 +1,294 @@
+/*templateTop style*/
+/*templateTop start*/
+.templateTop{
+    width: 100%;
+    background: #f1f1f1;
+}
+.templateTop div.top{
+    height:30px;
+    background: #f1f1f1;
+    line-height: 30px;
+}
+.templateTop div.bannerTop {
+    height: 120px;
+    background: #eb193c;
+}
+/*district contentStyle start*/
+.templateTop div.top ul.district>li {
+    height: 30px;
+    padding: 0 24px 0 9px;
+    background: #f1f1f1;
+    position: relative;
+    cursor: pointer;
+}
+.templateTop div.top ul.district li div.title{
+    color:red;
+}
+.templateTop div.top ul.district li div.title i {
+    width: 18px;
+    height: 18px;
+    display: block;
+    position: absolute;
+    top:50%;
+    right:2px;
+    margin-top: -9px;
+    transition: all 0.2s;   /*CSS3过度*/
+}
+.templateTop div.top ul.district>li div.select{
+    width: 301px;
+    padding: 10px 0 10px 10px;
+    background: white;
+    border:1px solid #aaaaaa;
+    position: absolute;
+    top:30px;
+    left:0;
+    z-index: 10;
+    display: none;
+    cursor: pointer;
+}
+.templateTop div.top ul.district>li div.select ul li{
+    float: left;
+    width: 60px;
+    padding: 2px 0;
+}
+.templateTop div.top ul.district>li div.select ul li a {
+    padding: 3px 8px;
+    line-height:24px;
+    text-align: center;
+}
+.templateTop div.top ul.district>li div.select ul li a:hover{
+    background: #f4f4f4;
+    color: #c81623;
+}
+.templateTop div.top ul.district>li:hover>div.select{
+    display: block;
+}
+.templateTop div.top ul.district>li:hover{
+    background: white;
+}
+.templateTop div.top ul.district>li div.select ul li.sel a{
+    background: #C81623;
+    color:white;
+}
+/*district contentStyle end*/
+
+/*shortcut contentStyle start*/
+.shortcut li{
+    float: left;
+}
+/*纯文字快捷入口*/
+li.user {
+    padding: 0 2px;
+    margin-right: 10px;
+}
+li.user a.login {
+    color: #C81623;
+    margin-right: 4px;
+}
+/*文字左右都有icon图片*/
+li.app{
+    padding: 0 25px;
+}
+/*纯文字简短*/
+li.simplification{
+    padding: 0 8px;
+}
+/*文字+小图标*/
+li.icon{
+    padding-right: 25px;
+    padding-left: 8px;
+    position: relative;
+    width: 59px;
+}
+.shortcut li a:hover{
+    color:#c81623;
+}
+.shortcut li.rightBorder{
+    width:1px;
+    height:12px;
+    background: #ccc;
+    overflow: hidden;
+    margin: 9px 5px 0;
+}
+.shortcut li i.down {
+    width: 15px;
+    height: 15px;
+    display: block;
+    position: absolute;
+    top:8px;
+    right: 4px;
+    transition: all 0.2s;
+}
+li.myJd div.myJdCon{
+    position: absolute;
+    top:30px;
+    left:0;
+    z-index: 10;
+    display: none;
+    border:1px solid #dddddd;
+}
+li.myJd div.myJdCon div.conTop {
+    width: 265px;
+    height: 60px;
+    padding: 10px 0 10px 15px;
+    background: white;
+}
+li.myJd div.myJdCon div.conTop dl dt{
+    float: left;
+}
+li.myJd div.myJdCon div.conTop dl dt img{
+    border-radius: 100%;
+}
+li.myJd div.myJdCon div.conTop dl dd{
+    float: left;
+    margin-right: 10px;
+}
+li.myJd div.myJdCon div.conTop dl dd span{
+    width: 1px;
+    height:12px;
+    background: #ccc;
+    display: inline-block;
+    margin: 0 6px;
+}
+li.myJd div.myJdCon div.conTop dl dd a.title{
+    height:30px;
+    display: block;
+    font-weight: bold;
+}
+li.myJd div.myJdCon div.conContent {
+    width: 265px;
+    background: white;
+    margin-bottom: 10px;;
+    padding-left: 15px;
+    border-bottom: 1px dashed #ccc;
+    overflow: hidden;
+}
+li.myJd div.myJdCon div.conContent ul li{
+    width: 126px;
+}
+li.myJd div.myJdCon div.conContent ul li a{
+    font-size: 12px;
+}
+li.myJd div.myJdCon div.conBottom{
+    width: 250px;
+    height:82px;
+    padding: 10px 15px;
+}
+li.myJd div.myJdCon div.conBottom div.imgList{
+    width: 250px;
+    height: 58px;
+}
+li.myJd div.myJdCon div.conBottom div.imgList a{
+    padding: 4px;
+    float: left;
+}
+li.app div.appJdCon{
+    position: absolute;
+    top:30px;
+    left:0;
+    z-index: 10;
+    display: none;
+    border:1px solid #dddddd;
+}
+li.chat div.focusJdCon{
+    position: absolute;
+    top:30px;
+    left:0;
+    z-index: 10;
+    display: none;
+    border:1px solid #dddddd;
+}
+li.client div.clientContent{
+    width: 170px;
+    background: white;
+    position: absolute;
+    top:30px;
+    left:0;
+    z-index: 10;
+    display: none;
+    border:1px solid #dddddd;
+}
+li.client div.clientContent div.title{
+    font-weight: 700;
+    padding-left: 10px;
+}
+li.client div.clientContent div.clientTop div.list{
+    border-bottom: 1px dotted #eeeeee;
+}
+li.client div.clientContent div.list ul li{
+    display: inline-block;
+    padding-left: 10px;
+    width: 70px;
+}
+li.siteMap div.siteMapContent {
+    width: 1210px;
+    padding: 20px 0 16px;
+    border:1px solid #dddddd;
+    background: white;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    z-index: 10;
+    display: none;
+}
+li.siteMap div.siteMapContent dl.w{
+    width:259px;
+    height: 156px;
+    padding-left: 20px;
+    float: left;
+    border-right: 1px solid #dddddd;
+}
+li.siteMap div.siteMapContent dl.w:last-child{
+    border-right:none;
+}
+li.siteMap div.siteMapContent dl.feature {
+    width: 346px;
+    padding-left: 20px;
+    float: left;
+    border-right: 1px solid #dddddd;
+}
+li.siteMap div.siteMapContent dl.feature dt{
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color:#666;
+}
+li.siteMap div.siteMapContent dl.feature dd ul li{
+    float: left;
+    width: 86px;
+    line-height: 24px;
+}
+li.siteMap div.siteMapContent dl.w dt{
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color:#666;
+}
+li.siteMap div.siteMapContent dl.w dd ul li{
+    float: left;
+    width: 86px;
+    line-height: 24px;
+}
+li.myJd:hover>div.myJdCon,
+li.app:hover>div.appJdCon,
+li.chat:hover>div.focusJdCon ,
+li.client:hover>div.clientContent,
+li.siteMap:hover>div.siteMapContent{
+    display: block;
+}
+/*shortcut contentStyle end*/
+/*advertisement start*/
+.bannerTop a{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    display: block;
+    width: 19px;
+    height: 19px;
+    background: url(../images/JD-head/close.png) 0 0 no-repeat;
+}
+.bannerTop a:hover{
+    background: url(../images/JD-head/close.png) 0 -19px no-repeat;
+}
+/*advertisement end*/
+/*templateTop end*/

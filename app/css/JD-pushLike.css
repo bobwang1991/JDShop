@@ -1,0 +1,47 @@
+/*quality-live start 品质生活 ------------------------- 优化代码示例*/
+/*quality-live-title 品质生活-标题*/
+.quality-live-title h2{font:400 20px/36px "微软雅黑";color:#333;}
+/*quality-live-content 品质生活-内容*/
+.quality-live-content{height:405px;border:1px solid #ededed;color:#000;font-size:16px;}
+/*品质生活公共样式区域 - 开始*/
+/*大图区域样式背景*/
+.big-picture{background:#f7f7f7;}
+/*公共头部区域样式*/
+.picture .picture-top{position:relative;height:246px;border-right:1px solid #ededed;border-bottom:1px solid #ededed;overflow:hidden;}
+/*公共头部标题样式*/
+.picture .picture-top p.tit{margin:0 20px;font:700 15px/40px "微软雅黑";color:#333;text-align:center;border-bottom:1px dashed #e0e0e0;}
+/*头部区域链接公共样式*/
+.picture .picture-top a{width:100%;height:100%;display:block;position:absolute;top:0;left:0;}
+/*底部区域链接公共样式*/
+.picture .picture-bottom a{width:100%;height:100%;display:block;position:absolute;top:0;left:0;}
+/*公共底部图片样式*/
+.picture .picture-bottom{width:201px;height:158px;position:relative;float:left;border-right:1px solid #ededed;}
+/*图片信息公共样式*/
+.picture .info{position:absolute;top:30px;left:30px;color:#333;font-family:"微软雅黑";line-height:1.3;font-size:12px;}
+/*信息内容公共样式*/
+.picture .info p.title{font-weight:700;font-size:16px;margin-bottom:12px;}
+.picture .info p.describe{margin-bottom:4px;}
+.picture .info p.activity{color:#c81623;}
+/*图片信息公共位置调用*/
+.info-left .info{top:45px;left:15px;}
+.picture-top .info-top{top:110px;}
+/*品质生活公共样式区域 - 结束*/
+/*品质生活区域私有样式*/
+/*图片区域高度*/
+.quality-live-content .picture{height:100%;float:left;}
+/*图片头部区域样式*/
+.quality-live-content .big-picture .picture-top{width:403px;}
+.big-picture .picture-top .info{left:40px;}
+/*图片底部区域样式*/
+.small-picture .picture-bottom{width:228px;}
+/*右侧品牌区域样式*/
+/*右侧品牌区域公共样式*/
+.brand-picture{width:170px;height:100%;background:#fff;overflow:hidden;position:relative;}
+.brand-picture-content{width:84px;margin-top:13px;position:relative;overflow:hidden;float:left;}
+.brand-picture ul{margin-top:-13px;}
+.brand-picture ul li{height:57px;position:relative;border-bottom:1px dashed #e0e0e0;}
+/*右侧品牌区域私有样式*/
+.brand-picture-content ul li{width:74px;float:right;}
+.brand-picture-content ul li{width:66px;padding-left:8px;float:left;}
+.brand-picture .border-right{border-right:1px dashed #e0e0e0;}
+/*end quality-live    ------------------------------- 优化代码示例*/

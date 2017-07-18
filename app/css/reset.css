@@ -1,0 +1,7 @@
+/*reset style*/
+/*margin,padding start*/
+html,body,div,ul,li,a,dt,dl,dd,img,p,h1,h2,h3,h4{margin: 0;padding: 0;}
+/*margin,padding end*/
+/*font start*/
+body{font-size: 12px;color:#666;font-family: '微软雅黑';}
+/*font end*/

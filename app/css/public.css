@@ -1,0 +1,27 @@
+/*public style*/
+/*tage start*/
+ul li{list-style: none;}
+img{border:none;display: block;}
+a{text-decoration: none;color: #666;font: 400 12px /12px "微软雅黑";}
+/*tage end*/
+/*float start*/
+.fl{float: left;}
+.fr{float: right;}
+.main{width: 1210px;margin: 0 auto;position: relative}
+/*float end*/
+/*clearfix start*/
+.clearfix:after {
+    content: "";
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    border: none;
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+/*clearfix end*/
+/*rotate start*/
+.rotate{transform: rotate(180deg);}
+/*rotate end*/
